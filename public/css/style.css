@@ -1,0 +1,184 @@
+/* TODO - Write your CSS here */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(220, 108, 243);
+    background-color: #f5f5f5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    border-radius: 10px;
+}
+
+li {
+    float: right
+}
+
+li a{
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+#btn {
+    background-color: rgb(220, 108, 243);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#title {
+   color: black;
+   text-decoration: none;
+}
+
+#btn:hover {
+    opacity: 0.8;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+/*mouse over link*/
+a:hover {
+    color: rgb(99, 95, 99);
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-header {
+    padding: 15px 0 15px 0;
+}
+
+#textArea {
+    width: 100%;
+    display: inline;
+    background-color:blue;
+    color: black;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    margin: 6px 2px 0;
+}
+
+#coment-form {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#login-form,
+#username-input-login,
+#password-input-login,
+#login-btn {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+}
+
+#textArea {
+    display: inline;
+    background-color: blueviolet;
+    color: black;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    margin: 6px 2px 0;
+}
+
+button {
+    display: inline;
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    margin: 6px 2px 0;
+    border-radius: 30px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.container {
+    align-content: center;
+}
+
+.add-post {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: rgb(92, 92, 236);
+    border-radius: 30px;
+}
+
+.container-fluid {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
