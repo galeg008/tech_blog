@@ -7,6 +7,7 @@ const helpers = require('./utils/helpers');
 const sequelize = require('./config');
 const routes = require('./controllers');
 
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -32,7 +33,10 @@ const sess = {
 //apply session middleware
 app.use(session(sess));
 //create handlebars instance and add custom helper functions
-const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({ 
+  helpers,
+  hotreload: true,
+});
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');

@@ -1,3 +1,24 @@
 
 {{!-- TODO - write the template to show all the user's posts on the /dashboard route --}}
-<h1>This is the dashboard main page that should display all of a users posts</h1>
+
+<div class = "container-fluid">
+    <div class = "row">
+        <button class = "add- post">
+            <a href = "/dashboard/create">
+            <i class = "fa fa-plus-circle fa-1x" aria-hidden="true"></i> Create a Post
+            </a>
+        </button>
+        </div>
+</div>
+
+<h1>MY POSTS</h1>
+
+<div class = "row">
+    <div class = "column">
+
+        {{#each posts as | userPost | }}
+        {{> post this }}
+        {{/each}}
+
+    </div>
+</div>
